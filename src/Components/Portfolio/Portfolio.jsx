@@ -2,16 +2,32 @@
 
 import React, { useState } from 'react'
 
+
+import shakti from '../../assets/shakti-02.png'
+import febi from '../../assets/febi-02.png'
+import shopkalakriti from '../../assets/shopkalakriti-01.png'
+import events from '../../assets/events-02.png'
+import olympics from '../../assets/olympics-01.png'
+import lalettre from '../../assets/lalettre-02.png'
+
 const categories = ["All", "Websites", "Design"];
 // const [zoomedImage, setZoomedImage] = useState(null);
 
 const allProjects = [
-  {id: 1, category: 'Websites', image:"/src/assets/shakti-02.png"},
-   {id: 2, category: 'Websites', image:"/src/assets/febi-02.png"},
-     {id: 3, category: 'Websites', image:"/src/assets/shopkalakriti-01.png"},
-     {id: 4, category: 'Websites', image:"/src/assets/events-02.png"},
-      {id: 7, category: 'Design', image:"/src/assets/olympics-01.png"},
-       {id: 8, category: 'Design', image:"/src/assets/lalettre-02.png"}
+
+{ id: 1, category: 'Websites', image: shakti },
+  { id: 2, category: 'Websites', image: febi },
+  { id: 3, category: 'Websites', image: shopkalakriti },
+  { id: 4, category: 'Websites', image: events },
+  { id: 7, category: 'Design',   image: olympics },
+  { id: 8, category: 'Design',   image: lalettre },
+
+  // {id: 1, category: 'Websites', image:"/src/assets/shakti-02.png"},
+  //  {id: 2, category: 'Websites', image:"/src/assets/febi-02.png"},
+  //    {id: 3, category: 'Websites', image:"/src/assets/shopkalakriti-01.png"},
+  //    {id: 4, category: 'Websites', image:"/src/assets/events-02.png"},
+  //     {id: 7, category: 'Design', image:"/src/assets/olympics-01.png"},
+  //      {id: 8, category: 'Design', image:"/src/assets/lalettre-02.png"}
 ];
 
 function Portfolio(){
