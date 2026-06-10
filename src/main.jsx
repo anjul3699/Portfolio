@@ -5,6 +5,7 @@ import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Portfolio from './Components/Portfolio/Portfolio.jsx'
 import About from './Components/About/About.jsx'
+import Contact from './Components/Contact/Contact.jsx'
 
 
 let myRouteApp = createBrowserRouter([
@@ -30,6 +31,14 @@ let myRouteApp = createBrowserRouter([
         element:(
           <Suspense fallback={<h1>Loading Portfolio...</h1>}>
             <Portfolio/>
+          </Suspense>
+        )
+      },
+       {
+        path: "/Contact",
+        element:(
+          <Suspense fallback={<h1>Loading Portfolio...</h1>}>
+            <Contact/>
           </Suspense>
         )
       }
