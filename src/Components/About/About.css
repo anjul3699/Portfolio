@@ -1,0 +1,18 @@
+.about{
+    display: flex;
+    margin: 80px auto;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    gap: 40px;
+
+}
+.about-sec h1{
+    
+}
+
+.about-sec p{
+    line-height: 1.9;
+}
+
+

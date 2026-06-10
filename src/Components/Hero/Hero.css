@@ -1,0 +1,97 @@
+.hero{
+    width: 100%;
+    min-height: 100vh;  
+    background-image:  url('../../assets/hero-bk.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    top: 0;
+    left: 0;
+    margin-top: 0;
+    padding-top:0;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55); 
+    z-index: 0;
+}
+
+
+
+.top-text{
+    margin-bottom: 15px;
+}
+
+.hero-text{
+    color: white;
+    max-width: 850px;
+    margin: 70px;
+    margin-top: -200px;
+    position: relative;
+    z-index: 1;
+}
+.hero-text h1{
+font-size:80px;
+margin-bottom: 20px;
+}
+.hero-text h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+    max-width: 700px;
+}
+
+.hero-text p{
+    font-size: 18px;
+    max-width: 700px;
+}
+
+.btn-hero{
+padding: 10px 15px;
+font-size: 18px;
+border-radius: 5px;
+background-color: rgb(42, 193, 12);
+color: white;
+cursor: pointer;
+margin-top: 20px;
+}
+.btn-hero:hover{
+    background-color: rgb(34, 143, 12);
+    transition: 0.3s ease-in;
+}
+.btn-hire{
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-left: 20px;
+    border-radius: 5px;
+    background: none;
+    border: 2px solid rgb(34, 143, 12);
+    color: white;
+    cursor: pointer;
+}
+.btn-hire:hover{
+    background: rgb(34, 143, 12);
+    color: white;
+    transition: 0.3s ease-in-out; 
+}
+
+@media (max-width: 768px) {
+
+    .hero{
+        width: 100vh;
+        margin-left: -440px;
+        margin-top: 20;
+        
+        
+    }
+    .hero-text{
+        margin-top: 20;
+        padding-top: 100px;
+    }
+
+}

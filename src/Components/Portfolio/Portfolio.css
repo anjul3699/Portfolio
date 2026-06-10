@@ -1,0 +1,45 @@
+.gallery-box{
+  background: #071A3A;  
+  padding: 35px 20px;
+}
+.gallery-box h1{
+
+text-align: center;
+}
+
+.port-title{
+color: rgb(42, 193, 12);
+
+}
+.normal{
+color: white;
+}
+
+.gallery{
+    width: 100%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: #071A3A;
+    gap: 30px;
+}
+.gallery-img{
+    width: 100%;
+    
+}
+.gallery-image{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: 0.3s ease;
+    margin-top: 20px;
+   
+}
+.gallery-img2{
+   display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+}
+
+.gallery-image:hover{
+    transform: scale(1.05)
+}

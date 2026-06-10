@@ -1,0 +1,146 @@
+.sidebar {
+  width: 440px;
+  background: #1a1a1a;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0 30px;
+  z-index: 100;
+  box-shadow: 2px 0 20px rgba(0,0,0,0.4);
+}
+
+.avatar-ring {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 3px solid #2eb89a;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #333;
+  margin-bottom: 16px;
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sidebar-name {
+  font-weight: bold;
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 32px;
+  letter-spacing: 0.5px;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  gap: 4px;
+  flex: 1;
+}
+
+.nav-item {
+  background: none;
+  border: none;
+  color: #bbb;
+  font-size: 25px;
+  cursor: pointer;
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
+  font-family: inherit;
+  letter-spacing: 0.3px;
+  transition: color 0.2s;
+}
+
+.nav-item:hover {
+  color: #fff;
+}
+
+.nav-item.active {
+  color: #2eb89a;
+  font-weight: 600;
+}
+
+.sidebar-socials {
+  display: flex;
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.sidebar-socials a {
+  color: #888;
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.2s;
+}
+
+.sidebar-socials a:hover {
+  color: #2eb89a;
+}
+
+.hamburger{
+  display: none;
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 1000;
+  background: #0f172a;
+  color: #22d3ee;
+  border: 2px solid #22d3ee;
+  border-radius: 8px;
+  width: 42px;
+  height: 42px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.overlay{
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+}
+
+@media (max-width: 768px) {
+
+  /* Show hamburger button */
+  .hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* Show overlay */
+  .overlay {
+    display: block;
+  }
+  /* Sidebar hidden by default on mobile */
+  .sidebar {
+    position: fixed;
+    left: -440px;        /* hidden off screen */
+    top: 0;
+    height: 100vh;
+    z-index: 999;
+    transition: left 0.3s ease;
+  }
+
+  /* Sidebar visible when open */
+  .sidebar-open {
+    left: 0;             /* slide in */
+  }
+
+  .avatar-ring {
+  width: 150px;
+    height: 150px;
+  }
+}
