@@ -3,7 +3,7 @@ import Sidebar from './Components/Navbar/Navbar'
 import Hero from './Components/Hero/Hero'
 import About from './Components/About/About'
 import Portfolio from './Components/Portfolio/Portfolio'
-import Contact from './Components/contact/contact'
+import Contact from './Components/Contact/Contact'
 import { useState } from 'react'
 
 
