@@ -14,16 +14,6 @@ function App() {
     const el = document.getElementById(id)
     if (el) el.scrollIntoView({behavior: 'smooth'})
   }
-
-  // const [activePage, setActivePage] = useState('Home')
-
-  // const renderPage = () => {
-  //   switch (activePage) {
-  //     case 'Home':      return <Hero />
-  //     case 'About':     return <About />
-  //     case 'Portfolio': return <Portfolio />
-  //     default:          return <Hero />
-  //   }
   
 
   return (
