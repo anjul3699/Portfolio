@@ -70,24 +70,24 @@ const Contact = () => {
 
           <div className='flex flex-col gap-4'>
 
-            <div className='flex flex-row items-center gap-4'>
+            <div className='flex flex-row items-center gap-2 md:gap-4 w-full'>
               <MdArrowCircleRight className='text-2xl text-green-500 flex-shrink-0' />
-              <p className='w-18 text-sm md:text-base'>Name</p>
+              <p className='w-12 md:w-15 text-sm md:text-base flex-shrink-0'>Name</p>
               <input
                 value={name}
                 onChange={e => setName(e.target.value)}
-                className='flex-1 border rounded-md bg-transparent px-3 py-2 placeholder:text-gray-500 placeholder:text-sm'
+                className='flex-1 min-w-0 border rounded-md bg-transparent px-3 py-2 placeholder:text-gray-500 placeholder:text-sm'
                 placeholder="Enter your name..."
               />
             </div>
 
-            <div className='flex flex-row items-center gap-4'>
+            <div className='flex flex-row items-center gap-2 md:gap-4 w-full'>
               <MdArrowCircleRight className='text-2xl text-green-500 flex-shrink-0' />
-              <p className='w-18 text-sm md:text-base'>Email</p>
+              <p className='w-12 md:w-15 text-sm md:text-base flex-shrink-0'>Email</p>
               <input
                 value={email}
                 onChange={e => setEmail(e.target.value)}
-                className='flex-1 border rounded-md bg-transparent px-3 py-2 placeholder:text-gray-500 placeholder:text-sm'
+                className='flex-1 min-w-0 border rounded-md bg-transparent px-3 py-2 placeholder:text-gray-500 placeholder:text-sm'
                 placeholder="Enter your email..."
               />
             </div>

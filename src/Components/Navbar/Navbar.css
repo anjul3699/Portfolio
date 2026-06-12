@@ -121,9 +121,9 @@
     justify-content: center;
   }
   /* Show overlay */
-  .overlay {
+  /* .overlay {
     display: block;
-  }
+  } */
   /* Sidebar hidden by default on mobile */
   .sidebar {
     position: fixed;
