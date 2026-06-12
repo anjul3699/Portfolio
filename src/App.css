@@ -19,4 +19,13 @@ body {
   margin-left: 440px;   /* must match sidebar width */
   flex: 1;
   min-height: 100vh;
+   width: calc(100% - var(--sidebar-width));  /* prevent overflow */
+}
+
+/* Mobile fix */
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;        /* remove sidebar offset */
+    width: 100%;           /* full width on mobile */
+  }
 }
