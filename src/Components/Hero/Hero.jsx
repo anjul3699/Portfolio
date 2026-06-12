@@ -10,7 +10,9 @@ const Hero = () => {
         <h3>Turning Clicks into Conversions with Code & Creativity</h3>
         <p>I design and develop scalable, responsive, and high-performance web applications, combining modern technologies with clean architecture and user-focused design.</p>
         <button className='btn-hero'>Know More</button>
-        <button className='btn-hire'>Hire Me   →</button>
+        <button 
+        onClick={() => document.getElementById('contact').scrollIntoView({behavior: 'smooth'})}
+        className='btn-hire'>Hire Me   →</button>
       </div>
     </div>
   )
