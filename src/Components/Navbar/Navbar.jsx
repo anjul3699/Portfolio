@@ -3,7 +3,7 @@ import './Navbar.css'
 import profilepic from '../../assets/profile-pic.jpg'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
-const navItems = ['Home', 'About', 'Portfolio', 'Contact']
+const navItems = ['Home', 'About','Experience', 'Portfolio', 'Contact']
 
 const Navbar = ({ setActivePage }) => {
 const [isOpen, setIsOpen] = useState(false)    //sidebar toggle

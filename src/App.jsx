@@ -2,6 +2,7 @@ import './App.css'
 import Sidebar from './Components/Navbar/Navbar'
 import Hero from './Components/Hero/Hero'
 import About from './Components/About/About'
+import Experience from './Components/Experience/Experience'
 import Portfolio from './Components/Portfolio/Portfolio'
 import Contact from './Components/Contact/Contact'
 
@@ -18,6 +19,7 @@ function App() {
       <main className='main-content'>
         <section id='home'>      <Hero />      </section>
         <section id='about'>     <About />     </section>
+        <section id='experience'> <Experience /> </section>
         <section id='portfolio'> <Portfolio /> </section>
         <section id='contact'>   <Contact />   </section>
       </main>
